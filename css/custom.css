@@ -1,6 +1,7 @@
 /*----------------------------------------------------------------------------------------
 * Author : Awaiken
-* Template Name : Fwizz - Restaurant Cafe And Food HTML Template
+* Template Name : Antojitos FranBren - El lugar donde los
+antojos se hacen realidad
 * File : CSS File
 * Version : 1.0
 *---------------------------------------------------------------------------------------- */
@@ -644,7 +645,7 @@ header.main-header .header-sticky.active {
 
 .hero {
 	min-height: 100vh;
-	background: url('../images/hero-bg-img.jpg') no-repeat center center;
+	background: url('../images/banner-antojitos-franbren.png') no-repeat center center;
 	background-size: cover;
 	position: relative;
 	display: flex;
@@ -1822,7 +1823,7 @@ header.main-header .header-sticky.active {
 
 .page-header {
 	position: relative;
-	background: url("../images/page-header-bg.jpg") no-repeat center center;
+	background: url("../images/banner-antojitos-franbren.png") no-repeat center center;
 	background-size: cover;
 	padding: 280px 0 120px;
 	margin-top: -117px;
@@ -3759,4 +3760,8 @@ header.main-header .header-sticky.active {
 	.error-image {		
 		margin-bottom: 30px;
 	}
+}
+/* Personalizados */
+.logo-navbar{
+	width: 20%;
 }
