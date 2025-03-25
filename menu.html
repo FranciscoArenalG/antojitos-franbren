@@ -1,660 +1,575 @@
 <!DOCTYPE html>
 <html lang="zxx">
-<head>
-	<!-- Meta -->
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta name="author" content="Awaiken">
-	<!-- Page Title -->
-	<title>Antojitos FranBren - El lugar donde los
-antojos se hacen realidad</title>
-	<!-- Favicon Icon -->
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
-	<!-- Google Fonts css-->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-	<!-- Bootstrap css -->
-	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-	<!-- SlickNav css -->
-	<link href="css/slicknav.min.css" rel="stylesheet">
-	<!-- Swiper css -->
-	<link rel="stylesheet" href="css/swiper-bundle.min.css">
-	<!-- Font Awesome icon css-->
-	<link href="css/all.min.css" rel="stylesheet" media="screen">
-	<!-- Animated css -->
-	<link href="css/animate.css" rel="stylesheet">
-	<!-- Magnific css -->
-	<link href="css/magnific-popup.css" rel="stylesheet">
-	<!-- Main custom css -->
-	<link href="css/custom.css" rel="stylesheet" media="screen">
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
+  <head>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Awaiken" />
+    <!-- Page Title -->
+    <title>
+      Antojitos FranBren - El lugar donde los antojos se hacen realidad
+    </title>
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+    <!-- Google Fonts css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <!-- SlickNav css -->
+    <link href="css/slicknav.min.css" rel="stylesheet" />
+    <!-- Swiper css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!-- Font Awesome icon css-->
+    <link href="css/all.min.css" rel="stylesheet" media="screen" />
+    <!-- Animated css -->
+    <link href="css/animate.css" rel="stylesheet" />
+    <!-- Magnific css -->
+    <link href="css/magnific-popup.css" rel="stylesheet" />
+    <!-- Main custom css -->
+    <link href="css/custom.css" rel="stylesheet" media="screen" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-</head>
+    <style>
+      .menu-item-boxes {
+        min-height: 100vh; /* Ajusta la altura mínima */
+        overflow: hidden; /* Evita el desbordamiento visual */
+      }
+    </style>
+  </head>
 
-<body class="tt-magic-cursor goto-top">
+  <body class="tt-magic-cursor goto-top">
+    <!-- Preloader Start -->
+    <div class="preloader">
+      <div class="loading-container">
+        <div class="loading"></div>
+        <div id="loading-icon"><img src="images/loader.svg" alt="" /></div>
+      </div>
+    </div>
+    <!-- Preloader End -->
 
-	<!-- Preloader Start -->
-	<div class="preloader">
-		<div class="loading-container">
-			<div class="loading"></div>
-			<div id="loading-icon"><img src="images/loader.svg" alt=""></div>
-		</div>
-	</div>
-	<!-- Preloader End -->
+    <!-- Magic Cursor Start -->
+    <div id="magic-cursor">
+      <div id="ball"></div>
+    </div>
+    <!-- Magic Cursor End -->
 
-	<!-- Magic Cursor Start -->
-	<div id="magic-cursor">
-		<div id="ball"></div>
-	</div>
-	<!-- Magic Cursor End -->
+    <!-- Header Start -->
+    <header class="main-header" id="hero-section">
+      <div class="header-sticky">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <!-- Logo Start -->
+            <a class="navbar-brand" href="index.html">
+              <img
+                src="images/logo-antojitos-franbren.png"
+                class="logo-navbar"
+                alt="Logo"
+              />
+            </a>
+            <!-- Logo End -->
 
-	<!-- Header Start -->
-	<header class="main-header" id="hero-section">
-		<div class="header-sticky">
-			<nav class="navbar navbar-expand-lg">
-				<div class="container">
-					<!-- Logo Start -->
-					<a class="navbar-brand" href="index.html">
-						<img src="images/logo-antojitos-franbren.png" class="logo-navbar" alt="Logo">
-					</a>
-					<!-- Logo End -->
-	
-					<!-- Main Menu start -->
-					<div class="collapse navbar-collapse main-menu">
-						<ul class="navbar-nav mr-auto" id="menu">
-							<li class="nav-item first-menu"><a class="nav-link" href="./">Home</a></li>
-							<li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
-							<li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-							<li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
-							<li class="nav-item submenu"><a class="nav-link" href="#">Pages</a>
-								<ul>									
-									<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-									<li class="nav-item"><a class="nav-link" href="blog-single.html">Blog Details</a></li>
-									<li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-									<li class="nav-item"><a class="nav-link" href="404.html">404</a></li>
-								</ul>
-							</li>
-							<li class="nav-item"><a class="nav-link" href="contact.html">Contáctanos</a></li>
-							<li class="nav-item highlighted-menu"><a class="btn-default" href="booking.html">Book Now</a></li>
-						</ul>
-					</div>
-					<!-- Main Menu End -->
-	
-					<div class="navbar-toggle"></div>
-				</div>
-			</nav>
-			<div class="responsive-menu"></div>
-		</div>
-	</header>
-	<!-- Header End -->
-
-	<!-- Page Header Start -->
-	<div class="page-header parallaxie">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<!-- Page Header Box start -->
-					<div class="page-header-box">
-						<h1 class="text-anime">Menu</h1>
-						<nav>
-							<ol class="breadcrumb wow fadeInUp" data-wow-delay="0.50s">
-								<li class="breadcrumb-item"><a href="index.html">Home</a></li>
-								<li class="breadcrumb-item active">Menu</li>
-							</ol>
-						</nav>
-					</div>
-					<!-- Page Header Box end -->
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Page Header End -->
-
-	<!-- Menu Page Start -->
-	<div class="menu-page-section">
-		<div class="container">			
-			<div class="row">
-				<div class="col-md-12">
-					
-				</div>
-
-				<!-- Menu Dises Section Start -->
-				<div class="col-lg-3 col-md-12">
-					<!-- Sidebar Menu Dises Nav start -->
-					<div class="menu-dises-nav wow fadeInLeft" data-wow-delay="0.75s">
-						<ul>
-							<li><a href="#" class="active-menu-dises" data-filter="*"><img src="images/icon-breakfast.svg" alt="">All Popular Dises</a></li>
-							<li><a href="#" data-filter=".breakfast"><img src="images/icon-breakfast.svg" alt="">Breakfast</a></li>
-							<li><a href="#" data-filter=".lunches"><img src="images/icon-lunches.svg" alt="">Lunches</a></li>
-							<li><a href="#" data-filter=".dinner"><img src="images/icon-dinner.svg" alt="">Dinner</a></li>
-							<li><a href="#" data-filter=".drinks"><img src="images/icon-drinks.svg" alt="">Drinks</a></li>
-							<li><a href="#" data-filter=".fast-foods"><img src="images/icon-fast-foods.svg" alt="">Fast Foods</a></li>
-							<li><a href="#" data-filter=".dessert"><img src="images/icon-dessert.svg" alt="">Dessert</a></li>
-						</ul>
-					</div>
-					<!-- Sidebar Menu Dises Nav end -->
-				</div>
-
-
-				<div class="col-lg-9 col-md-12">
-					<!-- Menu Item Box start -->
-					<div class="row menu-item-boxes wow fadeInUp" data-wow-delay="1.00s">
-						<!-- Breakfast Section start -->
-
-						<!-- Menu Item start -->
-						<div class="col-lg-4 col-md-6 menu-item-box breakfast dinner">
-									<div class="menu-item">
-										<!-- Menu Item Image start -->
-										<div class="menu-item-img">
-											<figure class="image-anime">
-												<img src="images/menu-1.jpg" alt="">
-											</figure>										
-										</div>
-										<!-- Menu Item Image start -->
-
-										<!-- Menu Item Body start -->
-										<div class="menu-item-body">
-											<div class="rating-img">
-												<img src="images/start-rating.png" alt="">
-											</div>
-											<h3>Grilled Marinated</h3>
-											<p>Sit amet, consectetur adipiscing elit maximus velit, non eleifend.</p>
-										</div>
-										<!-- Menu Item Body end -->
-									</div>
-						</div>
-						<!-- Menu Item end -->
-
-						<!-- Menu Item start -->
-						<div class="col-lg-4 col-md-6 menu-item-box breakfast fast-foods">
-									<div class="menu-item">
-										<!-- Menu Item Image start -->
-										<div class="menu-item-img">
-											<figure class="image-anime">
-												<img src="images/menu-2.jpg" alt="">
-											</figure>
-										</div>
-										<!-- Menu Item Image start -->
-
-										<!-- Menu Item Body start -->
-										<div class="menu-item-body">
-											<div class="rating-img">
-												<img src="images/start-rating.png" alt="">
-											</div>
-											<h3>Fried Egg</h3>
-											<p>Sit amet, consectetur adipiscing elit maximus velit, non eleifend.</p>
-										</div>
-										<!-- Menu Item Body end -->
-									</div>
-						</div>
-						<!-- Menu Item end -->
-
-						<!-- Menu Item start -->
-						<div class="col-lg-4 col-md-6 menu-item-box breakfast dinner">
-									<div class="menu-item">
-										<!-- Menu Item Image start -->
-										<div class="menu-item-img">
-											<figure class="image-anime">
-												<img src="images/menu-3.jpg" alt="">
-											</figure>
-										</div>
-										<!-- Menu Item Image start -->
-
-										<!-- Menu Item Body start -->
-										<div class="menu-item-body">
-											<div class="rating-img">
-												<img src="images/start-rating.png" alt="">
-											</div>
-											<h3>Sardine Spaghetti</h3>
-											<p>Sit amet, consectetur adipiscing elit maximus velit, non eleifend.</p>
-										</div>
-										<!-- Menu Item Body end -->
-									</div>
-						</div>
-						<!-- Menu Item end -->
-
-						<!-- Menu Item start -->
-						<div class="col-lg-4 col-md-6 menu-item-box breakfast dessert">
-									<div class="menu-item">
-										<!-- Menu Item Image start -->
-										<div class="menu-item-img">
-											<figure class="image-anime">
-												<img src="images/menu-4.jpg" alt="">
-											</figure>
-										</div>
-										<!-- Menu Item Image start -->
-
-										<!-- Menu Item Body start -->
-										<div class="menu-item-body">
-											<div class="rating-img">
-												<img src="images/start-rating.png" alt="">
-											</div>
-											<h3>Ice Waffle</h3>
-											<p>Sit amet, consectetur adipiscing elit maximus velit, non eleifend.</p>
-										</div>
-										<!-- Menu Item Body end -->
-									</div>
-						</div>
-						<!-- Menu Item end -->
-
-						<!-- Menu Item start -->
-						<div class="col-lg-4 col-md-6 menu-item-box breakfast breakfast dinner">
-									<div class="menu-item">
-										<!-- Menu Item Image start -->
-										<div class="menu-item-img">
-											<figure class="image-anime">
-												<img src="images/menu-5.jpg" alt="">
-											</figure>										
-										</div>
-										<!-- Menu Item Image start -->
-
-										<!-- Menu Item Body start -->
-										<div class="menu-item-body">
-											<div class="rating-img">
-												<img src="images/start-rating.png" alt="">
-											</div>
-											<h3>Egg Omelet</h3>
-											<p>Sit amet, consectetur adipiscing elit maximus velit, non eleifend.</p>
-										</div>
-										<!-- Menu Item Body end -->
-									</div>
-						</div>
-						<!-- Menu Item end -->
-
-						<!-- Menu Item start -->
-						<div class="col-lg-4 col-md-6 menu-item-box breakfast drinks">
-									<div class="menu-item">
-										<!-- Menu Item Image start -->
-										<div class="menu-item-img">
-											<figure class="image-anime">
-												<img src="images/menu-6.jpg" alt="">
-											</figure>
-										</div>
-										<!-- Menu Item Image start -->
-
-										<!-- Menu Item Body start -->
-										<div class="menu-item-body">
-											<div class="rating-img">
-												<img src="images/start-rating.png" alt="">
-											</div>
-											<h3>Gourmet meal</h3>
-											<p>Sit amet, consectetur adipiscing elit maximus velit, non eleifend.</p>
-										</div>
-										<!-- Menu Item Body end -->
-									</div>
-						</div>
-						<!-- Menu Item end -->
-
-						<!-- Breakfast Section end -->
-
-						<!-- Lunches Section start -->
-						<!-- Menu Item start -->
-						<div class="col-lg-4 col-md-6 menu-item-box lunches dinner">
-							<div class="menu-item">
-								<!-- Menu Item Image start -->
-								<div class="menu-item-img">
-									<figure class="image-anime">
-										<img src="images/menu-7.jpg" alt="">
-									</figure>										
-								</div>
-								<!-- Menu Item Image start -->
-
-								<!-- Menu Item Body start -->
-								<div class="menu-item-body">
-									<div class="rating-img">
-										<img src="images/start-rating.png" alt="">
-									</div>
-									<h3>Vegetables Burger</h3>
-									<p>Sit amet, consectetur adipiscing elit maximus velit, non eleifend.</p>
-								</div>
-								<!-- Menu Item Body end -->
-							</div>
-						</div>
-						<!-- Menu Item end -->
-
-						<!-- Menu Item start -->
-						<div class="col-lg-4 col-md-6 menu-item-box lunches fast-foods">
-							<div class="menu-item">
-								<!-- Menu Item Image start -->
-								<div class="menu-item-img">
-									<figure class="image-anime">
-										<img src="images/menu-8.jpg" alt="">
-									</figure>
-								</div>
-								<!-- Menu Item Image start -->
-
-								<!-- Menu Item Body start -->
-								<div class="menu-item-body">
-									<div class="rating-img">
-										<img src="images/start-rating.png" alt="">
-									</div>
-									<h3>Bone Steak</h3>
-									<p>Sit amet, consectetur adipiscing elit maximus velit, non eleifend.</p>
-								</div>
-								<!-- Menu Item Body end -->
-							</div>
-						</div>
-						<!-- Menu Item end -->
-
-						<!-- Menu Item start -->
-						<div class="col-lg-4 col-md-6 menu-item-box drinks lunches">
-							<div class="menu-item">
-								<!-- Menu Item Image start -->
-								<div class="menu-item-img">
-									<figure class="image-anime">
-										<img src="images/menu-9.jpg" alt="">
-									</figure>
-								</div>
-								<!-- Menu Item Image start -->
-
-								<!-- Menu Item Body start -->
-								<div class="menu-item-body">
-									<div class="rating-img">
-										<img src="images/start-rating.png" alt="">
-									</div>
-									<h3>Cream Sauce</h3>
-									<p>Sit amet, consectetur adipiscing elit maximus velit, non eleifend.</p>
-								</div>
-								<!-- Menu Item Body end -->
-							</div>
-						</div>
-						<!-- Menu Item end -->
-
-						<!-- Menu Item start -->
-						<div class="col-lg-4 col-md-6 menu-item-box lunches dessert">
-							<div class="menu-item">
-								<!-- Menu Item Image start -->
-								<div class="menu-item-img">
-									<figure class="image-anime">
-										<img src="images/menu-10.jpg" alt="">
-									</figure>
-								</div>
-								<!-- Menu Item Image start -->
-
-								<!-- Menu Item Body start -->
-								<div class="menu-item-body">
-									<div class="rating-img">
-										<img src="images/start-rating.png" alt="">
-									</div>
-									<h3>Aloo Gobi</h3>
-									<p>Sit amet, consectetur adipiscing elit maximus velit, non eleifend.</p>
-								</div>
-								<!-- Menu Item Body end -->
-							</div>
-						</div>
-						<!-- Menu Item end -->
-
-						<!-- Menu Item start -->
-						<div class="col-lg-4 col-md-6 menu-item-box lunches dinner">
-							<div class="menu-item">
-								<!-- Menu Item Image start -->
-								<div class="menu-item-img">
-									<figure class="image-anime">
-										<img src="images/menu-11.jpg" alt="">
-									</figure>										
-								</div>
-								<!-- Menu Item Image start -->
-
-								<!-- Menu Item Body start -->
-								<div class="menu-item-body">
-									<div class="rating-img">
-										<img src="images/start-rating.png" alt="">
-									</div>
-									<h3>Noodles</h3>
-									<p>Sit amet, consectetur adipiscing elit maximus velit, non eleifend.</p>
-								</div>
-								<!-- Menu Item Body end -->
-							</div>
-						</div>
-						<!-- Menu Item end -->
-
-						<!-- Menu Item start -->
-						<div class="col-lg-4 col-md-6 menu-item-box lunches">
-							<div class="menu-item">
-								<!-- Menu Item Image start -->
-								<div class="menu-item-img">
-									<figure class="image-anime">
-										<img src="images/menu-12.jpg" alt="">
-									</figure>
-								</div>
-								<!-- Menu Item Image start -->
-
-								<!-- Menu Item Body start -->
-								<div class="menu-item-body">
-									<div class="rating-img">
-										<img src="images/start-rating.png" alt="">
-									</div>
-									<h3>Delicious Dosas</h3>
-									<p>Sit amet, consectetur adipiscing elit maximus velit, non eleifend.</p>
-								</div>
-								<!-- Menu Item Body end -->
-							</div>
-						</div>
-						<!-- Menu Item end -->
-
-						<!-- Lunches Section end -->
-					</div>				
-					<!-- Menu Item Box end -->
-				</div>
-				<!-- Menu Dises Section End -->
-			</div>
-		</div>
-	</div>
-	<!-- Most Popular Dises End -->
-
-
-	<!-- Upcoming Events Post End -->
-
-	<!-- Footer Start -->
-	<footer class="footer">
-		
-		<!-- Scrolling Ticker Section Start -->
-        <div class="scrolling-ticker">
-            <div class="scrolling-ticker-box">
-                <div class="scrolling-content">
-					<span><i class="fa-solid fa-circle"></i>Vegetables Burger</span>
-					<span><i class="fa-solid fa-circle"></i>Lemon Tea</span>
-					<span><i class="fa-solid fa-circle"></i>Noodles</span>
-					<span><i class="fa-solid fa-circle"></i>Fried Potatoes</span>
-					<span><i class="fa-solid fa-circle"></i>Bone Steak</span>
-					<span><i class="fa-solid fa-circle"></i>Aloo Gobi</span>
-					<span><i class="fa-solid fa-circle"></i>Black Cold Coffee</span>
-					<span><i class="fa-solid fa-circle"></i>Delicious Dosas</span>
-					<span><i class="fa-solid fa-circle"></i>Lemon Tea</span>
-					<span><i class="fa-solid fa-circle"></i>Black Cold Coffee</span>
-                </div>
-
-                <div class="scrolling-content">
-					<span><i class="fa-solid fa-circle"></i>Vegetables Burger</span>
-					<span><i class="fa-solid fa-circle"></i>Lemon Tea</span>
-					<span><i class="fa-solid fa-circle"></i>Noodles</span>
-					<span><i class="fa-solid fa-circle"></i>Fried Potatoes</span>
-					<span><i class="fa-solid fa-circle"></i>Bone Steak</span>
-					<span><i class="fa-solid fa-circle"></i>Aloo Gobi</span>
-					<span><i class="fa-solid fa-circle"></i>Black Cold Coffee</span>
-					<span><i class="fa-solid fa-circle"></i>Delicious Dosas</span>
-					<span><i class="fa-solid fa-circle"></i>Lemon Tea</span>
-					<span><i class="fa-solid fa-circle"></i>Black Cold Coffee</span>
-                </div>
+            <!-- Main Menu start -->
+            <div class="collapse navbar-collapse main-menu">
+              <ul class="navbar-nav mr-auto" id="menu">
+                <li class="nav-item first-menu">
+                  <a class="nav-link" href="./">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item submenu">
+                  <a class="nav-link" href="#">Pages</a>
+                  <ul>
+                    <li class="nav-item">
+                      <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="blog-single.html"
+                        >Blog Details</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="404.html">404</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contáctanos</a>
+                </li>
+                <li class="nav-item highlighted-menu">
+                  <a class="btn-default" href="booking.html">Book Now</a>
+                </li>
+              </ul>
             </div>
+            <!-- Main Menu End -->
+
+            <div class="navbar-toggle"></div>
+          </div>
+        </nav>
+        <div class="responsive-menu"></div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Page Header Start -->
+    <div class="page-header parallaxie">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <!-- Page Header Box start -->
+            <div class="page-header-box">
+              <h1 class="text-anime">Menu</h1>
+              <nav>
+                <ol class="breadcrumb wow fadeInUp" data-wow-delay="0.50s">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item active">Menu</li>
+                </ol>
+              </nav>
+            </div>
+            <!-- Page Header Box end -->
+          </div>
         </div>
-        <!-- Scrolling Ticker Section End -->
+      </div>
+    </div>
+    <!-- Page Header End -->
 
-		<!-- Mega Footer Start -->
-		<div class="footer-mega">
-			<div class="container">
-				<!-- Footer Start -->
-				<div class="row">
-					<!-- Footer About start -->
-					<div class="col-lg-4 col-md-12">
-						<div class="footer-about">
-							<!-- Footer Logo start -->
-							<div class="footer-logo">
-								<img src="images/footer-logo.svg" alt="Logo">
-							</div>
-							<!-- Footer Logo end -->
+    <!-- Menu Page Start -->
+    <div class="menu-page-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12"></div>
 
-							<!-- Footer Content start -->
-							<div class="footer-content">
-								<p class="mb-0">Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has standard text ever since the when.</p>
+          <!-- Menu Dises Section Start -->
+          <div class="col-lg-3 col-md-12">
+            <!-- Sidebar Menu Dises Nav start -->
+            <div class="menu-dises-nav wow fadeInLeft" data-wow-delay="0.75s">
+              <ul>
+                <li>
+                  <a href="#" class="active-menu-dises" data-filter="*"
+                    ><img src="images/icon-breakfast.svg" alt="" />Todos los
+                    productos</a
+                  >
+                </li>
 
-								<div class="footer-social-link">
-									<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-									<a href="#"><i class="fa-brands fa-instagram"></i></a>
-									<a href="#"><i class="fa-brands fa-twitter"></i></a>
-									<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-								</div>
-							</div>
-							<!-- Footer Content end -->
-						</div>
-					</div>
-					<!-- Footer About end -->
+                <li>
+                  <a href="#" data-filter=".frappes"
+                    ><img src="images/icon-breakfast.svg" alt="" />Frappes</a
+                  >
+                </li>
+                <li>
+                  <a href="#" data-filter=".malteadas"
+                    ><img src="images/icon-breakfast.svg" alt="" />Malteadas</a
+                  >
+                </li>
+                <li>
+                  <a href="#" data-filter=".eskimos"
+                    ><img src="images/icon-breakfast.svg" alt="" />Eskimos</a
+                  >
+                </li>
+                <li>
+                  <a href="#" data-filter=".minidonas"
+                    ><img src="images/icon-breakfast.svg" alt="" />Mini Donas</a
+                  >
+                </li>
+                <li>
+                  <a href="#" data-filter=".minihotcakes"
+                    ><img src="images/icon-breakfast.svg" alt="" />Mini
+                    Hotcakes</a
+                  >
+                </li>
+                <li>
+                  <a href="#" data-filter=".hotcakes"
+                    ><img src="images/icon-breakfast.svg" alt="" />Hotcakes</a
+                  >
+                </li>
+                <li>
+                  <a href="#" data-filter=".waffles"
+                    ><img src="images/icon-breakfast.svg" alt="" />Waffles</a
+                  >
+                </li>
+                <li>
+                  <a href="#" data-filter=".snacksextras"
+                    ><img src="images/icon-breakfast.svg" alt="" />Snacks /
+                    Extras</a
+                  >
+                </li>
+                <li>
+                  <a href="#" data-filter=".tacos"
+                    ><img src="images/icon-breakfast.svg" alt="" />Tacos</a
+                  >
+                </li>
+                <li>
+                  <a href="#" data-filter=".bebidas"
+                    ><img src="images/icon-breakfast.svg" alt="" />Bebidas</a
+                  >
+                </li>
+                <li>
+                  <a href="#" data-filter=".sodasitalianas"
+                    ><img src="images/icon-breakfast.svg" alt="" />Sodas
+                    italianas</a
+                  >
+                </li>
+                <!-- <li>
+                  <a href="#" data-filter=".breakfast"
+                    ><img src="images/icon-breakfast.svg" alt="" />Breakfast</a
+                  >
+                </li>
+                <li>
+                  <a href="#" data-filter=".lunches"
+                    ><img src="images/icon-lunches.svg" alt="" />Lunches</a
+                  >
+                </li>
+                <li>
+                  <a href="#" data-filter=".dinner"
+                    ><img src="images/icon-dinner.svg" alt="" />Dinner</a
+                  >
+                </li>
+                <li>
+                  <a href="#" data-filter=".drinks"
+                    ><img src="images/icon-drinks.svg" alt="" />Drinks</a
+                  >
+                </li>
+                <li>
+                  <a href="#" data-filter=".fast-foods"
+                    ><img src="images/icon-fast-foods.svg" alt="" />Fast
+                    Foods</a
+                  >
+                </li>
+                <li>
+                  <a href="#" data-filter=".dessert"
+                    ><img src="images/icon-dessert.svg" alt="" />Dessert</a
+                  >
+                </li> -->
+              </ul>
+            </div>
+            <!-- Sidebar Menu Dises Nav end -->
+          </div>
 
-					<!-- Footer Menu start -->
-					<div class="col-lg-5 col-md-7">
-						<div class="row no-gutters">
-							<div class="col-md-6 col-12">
-								<div class="footer-links">
-									<h2>Our Menu</h2>
-									<ul>
-										<li><a href="#"><i class="fa-solid fa-arrow-right"></i>Breakfast</a></li>
-										<li><a href="#"><i class="fa-solid fa-arrow-right"></i>Lunches</a></li>
-										<li><a href="#"><i class="fa-solid fa-arrow-right"></i>Dinner</a></li>
-										<li><a href="#"><i class="fa-solid fa-arrow-right"></i>Fast Foods</a></li>
-										<li><a href="#"><i class="fa-solid fa-arrow-right"></i>Drinks</a></li>
-										<li><a href="#"><i class="fa-solid fa-arrow-right"></i>Dessert</a></li>
-									</ul>
-								</div>
-							</div>
+          <div class="col-lg-9 col-md-12">
+            <!-- Menu Item Box start -->
+            <div
+              class="row menu-item-boxes wow fadeInUp"
+              data-wow-delay="1.00s"
+            ></div>
+            <!-- Menu Item Box end -->
+          </div>
+          <!-- Menu Dises Section End -->
+        </div>
+      </div>
+    </div>
+    <!-- Most Popular Dises End -->
 
-							<div class="col-md-6 col-12">
-								<div class="footer-links">
-									<h2>Quick Links</h2>
-									<ul>
-										<li><a href="#"><i class="fa-solid fa-arrow-right"></i>Home</a></li>
-										<li><a href="#"><i class="fa-solid fa-arrow-right"></i>About Us</a></li>
-										<li><a href="#"><i class="fa-solid fa-arrow-right"></i>Menu</a></li>
-										<li><a href="#"><i class="fa-solid fa-arrow-right"></i>Testimonials</a></li>
-										<li><a href="#"><i class="fa-solid fa-arrow-right"></i>Events</a></li>
-										<li><a href="#"><i class="fa-solid fa-arrow-right"></i>Contáctanos</a></li>
-									</ul>
-								</div>
-							</div>
+    <!-- Upcoming Events Post End -->
 
-						</div>
-					</div>
-					<!-- Footer Menu end -->
+    <!-- Footer Start -->
+    <footer class="footer">
+      <!-- Scrolling Ticker Section Start -->
+      <div class="scrolling-ticker">
+        <div class="scrolling-ticker-box">
+          <div class="scrolling-content">
+            <span><i class="fa-solid fa-circle"></i>Vegetables Burger</span>
+            <span><i class="fa-solid fa-circle"></i>Lemon Tea</span>
+            <span><i class="fa-solid fa-circle"></i>Noodles</span>
+            <span><i class="fa-solid fa-circle"></i>Fried Potatoes</span>
+            <span><i class="fa-solid fa-circle"></i>Bone Steak</span>
+            <span><i class="fa-solid fa-circle"></i>Aloo Gobi</span>
+            <span><i class="fa-solid fa-circle"></i>Black Cold Coffee</span>
+            <span><i class="fa-solid fa-circle"></i>Delicious Dosas</span>
+            <span><i class="fa-solid fa-circle"></i>Lemon Tea</span>
+            <span><i class="fa-solid fa-circle"></i>Black Cold Coffee</span>
+          </div>
 
-					<!-- Footer Contact start -->
-					<div class="col-lg-3 col-md-5">
-						<div class="footer-contact">
-							<h2>Contact Now</h2>
-							<ul>
-								<li>
-									<span class="icon-list-icon"><i class="fa-solid fa-location-dot"></i></span>
-									<span class="icon-list-text">Av. del Taller 96-local 3, Tránsito, Cuauhtémoc, 06820 Ciudad de México, CDMX</span>
-								</li>
-								<li>	
-									<span class="icon-list-icon"><i class="fa-solid fa-phone"></i></span>
-									<span class="icon-list-text"><a href="tel:+525643444614">(+52) 56 4344 4614</a></span>
-								</li>
-								<li>
-									<span class="icon-list-icon"><i class="fa-solid fa-envelope"></i></span>
-									<span class="icon-list-text"><a href="mailto:antojitos.franbren@gmail.com">antojitos.franbren@gmail.com</a></span>									
-								</li>
-							</ul>
-						</div>
-					</div>
-					<!-- Footer Contact end -->
-				</div>	
-				<!-- Footer End -->
+          <div class="scrolling-content">
+            <span><i class="fa-solid fa-circle"></i>Vegetables Burger</span>
+            <span><i class="fa-solid fa-circle"></i>Lemon Tea</span>
+            <span><i class="fa-solid fa-circle"></i>Noodles</span>
+            <span><i class="fa-solid fa-circle"></i>Fried Potatoes</span>
+            <span><i class="fa-solid fa-circle"></i>Bone Steak</span>
+            <span><i class="fa-solid fa-circle"></i>Aloo Gobi</span>
+            <span><i class="fa-solid fa-circle"></i>Black Cold Coffee</span>
+            <span><i class="fa-solid fa-circle"></i>Delicious Dosas</span>
+            <span><i class="fa-solid fa-circle"></i>Lemon Tea</span>
+            <span><i class="fa-solid fa-circle"></i>Black Cold Coffee</span>
+          </div>
+        </div>
+      </div>
+      <!-- Scrolling Ticker Section End -->
 
-				<!-- Footer Subscribe Form Start -->
-				<div class="row footer-subscribe-section align-items-center">
-					<div class="col-lg-6 col-md-12">
-						<div class="footer-subscribe-title">
-							<h2>Subscribe & Join Our Channel</h2>
-						</div>
-					</div>
+      <!-- Mega Footer Start -->
+      <div class="footer-mega">
+        <div class="container">
+          <!-- Footer Start -->
+          <div class="row">
+            <!-- Footer About start -->
+            <div class="col-lg-4 col-md-12">
+              <div class="footer-about">
+                <!-- Footer Logo start -->
+                <div class="footer-logo">
+                  <img src="images/footer-logo.svg" alt="Logo" />
+                </div>
+                <!-- Footer Logo end -->
 
-					<div class="col-lg-6 col-md-12">
-						<div class="footer-subscribe-form">
-							<form id="footer_subscribeForm" action="#" method="POST" data-toggle="validator">
-								<div class="row align-items-center no-gutters">
-									<div class="form-group col-md-9 text-end">
-										<input type="email" name ="email" class="form-control" id="nemail" placeholder="Enter Email Address" required>
-										<div class="help-block with-errors"></div>
-									</div>
+                <!-- Footer Content start -->
+                <div class="footer-content">
+                  <p class="mb-0">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    industry. Lorem Ipsum has standard text ever since the when.
+                  </p>
 
-									<div class="col-md-3 text-end">
-										<button type="submit" class="form-btn">Subscribe</button>
-										<div id="nmsgSubmit" class="h3 text-left hidden"></div>
-									</div>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-				<!-- Footer Subscribe Form End -->
+                  <div class="footer-social-link">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                  </div>
+                </div>
+                <!-- Footer Content end -->
+              </div>
+            </div>
+            <!-- Footer About end -->
 
-				<!-- Footer Copyright Start -->
-				<div class="footer-copyright">
-					<div class="row">
-						<div class="col-md-6">
-							<p>Copyright © 2025 <strong>Antojitos FranBren.</strong> All rights reserved.</p>
-						</div>
-						<div class="col-md-6 text-end">
-							<a href="#hero-section" class="footer-btn"><span>Go to Top</span><i class="fa-solid fa-arrow-up"></i></a>
-						</div>
-					</div>
-				</div>
-				<!-- Footer Copyright End -->
-			</div>
-		</div>
-		<!-- Mega Footer End -->
-	</footer>
-	<!-- Footer End -->
+            <!-- Footer Menu start -->
+            <div class="col-lg-5 col-md-7">
+              <div class="row no-gutters">
+                <div class="col-md-6 col-12">
+                  <div class="footer-links">
+                    <h2>Our Menu</h2>
+                    <ul>
+                      <li>
+                        <a href="#"
+                          ><i class="fa-solid fa-arrow-right"></i>Breakfast</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><i class="fa-solid fa-arrow-right"></i>Lunches</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><i class="fa-solid fa-arrow-right"></i>Dinner</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><i class="fa-solid fa-arrow-right"></i>Fast Foods</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><i class="fa-solid fa-arrow-right"></i>Drinks</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><i class="fa-solid fa-arrow-right"></i>Dessert</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
 
-	<!-- Jquery Library File -->
-	<script src="js/jquery-3.7.1.min.js"></script>
-	<!-- Bootstrap js file -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Validator js file -->
-	<script src="js/validator.min.js"></script>
-	<!-- SlickNav js file -->
-	<script src="js/jquery.slicknav.js"></script>
-	<!-- Swiper js file -->
-	<script src="js/swiper-bundle.min.js"></script>
-	<!-- Counter js file -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/jquery.counterup.min.js"></script>
-	<!-- WayPoints js file -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Isotop js file -->
-	<script src="js/isotope.min.js"></script>
-	<!-- Magnific js file -->
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<!-- Parallax js file -->
-	<script src="js/parallaxie.js"></script>
-	<!-- SmoothScroll -->
-	<script src="js/SmoothScroll.js"></script>
-	<!-- MagicCursor js file -->
-	<script src="js/gsap.min.js"></script>
-	<script src="js/magiccursor.js"></script>
-	<!-- Text Effect js file -->
-	<script src="js/splitType.js"></script>
-	<script src="js/ScrollTrigger.min.js"></script>
-	<!-- Wow js file -->
-	<script src="js/wow.js"></script>
-	<!-- Main Custom js file -->
-	<script src="js/function.js"></script>
-</body>
+                <div class="col-md-6 col-12">
+                  <div class="footer-links">
+                    <h2>Quick Links</h2>
+                    <ul>
+                      <li>
+                        <a href="#"
+                          ><i class="fa-solid fa-arrow-right"></i>Home</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><i class="fa-solid fa-arrow-right"></i>About Us</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><i class="fa-solid fa-arrow-right"></i>Menu</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><i class="fa-solid fa-arrow-right"></i
+                          >Testimonials</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><i class="fa-solid fa-arrow-right"></i>Events</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><i class="fa-solid fa-arrow-right"></i>Contáctanos</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Footer Menu end -->
+
+            <!-- Footer Contact start -->
+            <div class="col-lg-3 col-md-5">
+              <div class="footer-contact">
+                <h2>Contact Now</h2>
+                <ul>
+                  <li>
+                    <span class="icon-list-icon"
+                      ><i class="fa-solid fa-location-dot"></i
+                    ></span>
+                    <span class="icon-list-text"
+                      >Av. del Taller 96-local 3, Tránsito, Cuauhtémoc, 06820
+                      Ciudad de México, CDMX</span
+                    >
+                  </li>
+                  <li>
+                    <span class="icon-list-icon"
+                      ><i class="fa-solid fa-phone"></i
+                    ></span>
+                    <span class="icon-list-text"
+                      ><a href="tel:+525643444614">(+52) 56 4344 4614</a></span
+                    >
+                  </li>
+                  <li>
+                    <span class="icon-list-icon"
+                      ><i class="fa-solid fa-envelope"></i
+                    ></span>
+                    <span class="icon-list-text"
+                      ><a href="mailto:antojitos.franbren@gmail.com"
+                        >antojitos.franbren@gmail.com</a
+                      ></span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Footer Contact end -->
+          </div>
+          <!-- Footer End -->
+
+          <!-- Footer Subscribe Form Start -->
+          <div class="row footer-subscribe-section align-items-center">
+            <div class="col-lg-6 col-md-12">
+              <div class="footer-subscribe-title">
+                <h2>Subscribe & Join Our Channel</h2>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12">
+              <div class="footer-subscribe-form">
+                <form
+                  id="footer_subscribeForm"
+                  action="#"
+                  method="POST"
+                  data-toggle="validator"
+                >
+                  <div class="row align-items-center no-gutters">
+                    <div class="form-group col-md-9 text-end">
+                      <input
+                        type="email"
+                        name="email"
+                        class="form-control"
+                        id="nemail"
+                        placeholder="Enter Email Address"
+                        required
+                      />
+                      <div class="help-block with-errors"></div>
+                    </div>
+
+                    <div class="col-md-3 text-end">
+                      <button type="submit" class="form-btn">Subscribe</button>
+                      <div id="nmsgSubmit" class="h3 text-left hidden"></div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- Footer Subscribe Form End -->
+
+          <!-- Footer Copyright Start -->
+          <div class="footer-copyright">
+            <div class="row">
+              <div class="col-md-6">
+                <p>
+                  Copyright © 2025 <strong>Antojitos FranBren.</strong> All
+                  rights reserved.
+                </p>
+              </div>
+              <div class="col-md-6 text-end">
+                <a href="#hero-section" class="footer-btn"
+                  ><span>Go to Top</span><i class="fa-solid fa-arrow-up"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!-- Footer Copyright End -->
+        </div>
+      </div>
+      <!-- Mega Footer End -->
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Jquery Library File -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap js file -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Validator js file -->
+    <script src="js/validator.min.js"></script>
+    <!-- SlickNav js file -->
+    <script src="js/jquery.slicknav.js"></script>
+    <!-- Swiper js file -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- Counter js file -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <!-- WayPoints js file -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <!-- Isotop js file -->
+    <script src="js/isotope.min.js"></script>
+    <!-- Magnific js file -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Parallax js file -->
+    <script src="js/parallaxie.js"></script>
+    <!-- SmoothScroll -->
+    <script src="js/SmoothScroll.js"></script>
+    <!-- MagicCursor js file -->
+    <script src="js/gsap.min.js"></script>
+    <script src="js/magiccursor.js"></script>
+    <!-- Text Effect js file -->
+    <script src="js/splitType.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <!-- Wow js file -->
+    <script src="js/wow.js"></script>
+	<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+
+    <!-- Main Custom js file -->
+    <script src="js/function.js"></script>
+    <!-- Lista de productos -->
+    <script src="js/menu.js"></script>
+  </body>
 </html>
