@@ -37,7 +37,7 @@ antojos se hacen realidad
 
 :root {
 	--primary-color			: #FFFFFF;
-	--secondary-color		: #FEBC30;
+	--secondary-color		: #8f5b4f;
 	--text-color			: #808080;
 	--accent-color			: #222222;
 	--background-color		: #F7F4ED;
@@ -937,7 +937,7 @@ header.main-header .header-sticky.active {
 	top: 0;
 	left: 0;
 	bottom: 0;
-	background-color: #FEBC301A;
+	background-color: #8f5b4f1A;
 	border-radius: 100%;
 	width: 70px;
 	height: 70px;
