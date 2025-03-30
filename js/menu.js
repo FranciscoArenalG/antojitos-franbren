@@ -81,7 +81,7 @@ $(function () {
                     </figure>
                 </div>
                 <div class="menu-item-body">
-                    <h3>${producto.nombre}</h3>
+                    <h3>${producto.nombre} - ${producto.precio}</h3>
                     <p>${producto.descripcion}</p>
                     <a href="${producto.link}" class="form-control btn-default wow fadeInUp">Ver producto</a>
                 </div>
