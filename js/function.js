@@ -383,13 +383,10 @@
 
 	/* Menu Dises (filtering) */
 	$(window).on("load", function () {
-		var $menuitem = $(".menu-item-boxes");
-		var $menudisesnav = $(".menu-dises-nav li a");
+		if ($(".menu-item-boxes").length) {
 	
-		// Verificamos que existan los elementos y los ítems para inicializar Isotope
-		if ($menuitem.length && $menuitem.find('.menu-item-box').length > 0) {
-			// Inicializamos Isotope
-			$menuitem = $menuitem.isotope({
+			/* Init Isotope */
+			var $menuitem = $(".menu-item-boxes").isotope({
 				itemSelector: ".menu-item-box",
 				layoutMode: "masonry",
 				masonry: {
@@ -397,62 +394,33 @@
 				}
 			});
 	
-			// Función para aplicar filtro y hacer scroll
-			function aplicarFiltroYScroll($link, updateHash = true) {
-				var filterValue = $link.attr('data-filter');
-				var target = $link.attr('href');
+			/* Filter items on click + scroll */
+			var $menudisesnav = $(".menu-dises-nav li a");
 	
-				// Aplicar filtro si Isotope está inicializado
-				if ($menuitem.data('isotope')) {
-					$menuitem.isotope({ filter: filterValue });
-				}
+			$menudisesnav.on("click", function (e) {
+				e.preventDefault();  // Evita la redirección automática del enlace
 	
-				// Clase activa en el menú
+				var $this = $(this);
+				var filterValue = $this.attr("data-filter");
+				var target = $this.attr("href");
+	
+				// Aplicar filtro
+				$menuitem.isotope({ filter: filterValue });
+	
+				// Activar clase
 				$menudisesnav.removeClass("active-menu-dises");
-				$link.addClass("active-menu-dises");
+				$this.addClass("active-menu-dises");
 	
-				// Scroll suave si el target existe
-				if (target && target.startsWith("#") && $(target).length) {
-					var $target = $(target);
-					$('html, body').animate({
-						scrollTop: $target.offset().top
-					}, 500, function () {
-						// Actualizamos el hash solo después del scroll
-						if (updateHash) {
-							history.replaceState(null, null, target);
-						}
-					});
-				}
-			}
-	
-			// Click en enlaces del menú
-			$menudisesnav.on('click', function (e) {
-				e.preventDefault();
-				aplicarFiltroYScroll($(this));
-			});
-	
-			// Si hay hash al cargar la página, aplicamos acción
-			var hash = window.location.hash;
-			if (hash) {
-				var $link = $('.menu-dises-nav li a[href="' + hash + '"]');
-				if ($link.length) {
-					aplicarFiltroYScroll($link, false); // no actualizamos hash porque ya está
-				}
-			} else {
-				// Mostrar todos los elementos por defecto
-				if ($menuitem.data('isotope')) {
-					$menuitem.isotope({ filter: "*" });
-				}
-			}
-	
-			// Escuchamos cambios de hash manuales (por si el usuario usa atrás/adelante del navegador)
-			$(window).on('hashchange', function () {
-				var newHash = window.location.hash;
-				var $link = $('.menu-dises-nav li a[href="' + newHash + '"]');
-				if ($link.length) {
-					aplicarFiltroYScroll($link, false);
+				// Scroll suave a la sección (solo cuando se hace clic)
+				if (target && $(target).length) {
+					$("html, body").animate({
+						scrollTop: $(target).offset().top
+					}, 200);
 				}
 			});
+	
+			// Mostrar todos los elementos al cargar
+			$menuitem.isotope({ filter: "*" });
 		}
 	});
 	
