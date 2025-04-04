@@ -34,11 +34,13 @@ $(function () {
     let nuevaCard = $(`
         <div class="col-lg-3 col-md-6 menu-item-box p-3 mb-2 ${producto.categoria}">
             <div class="menu-item">
+                <!--
                 <div class="menu-item-img">
                     <figure class="image-anime">
                         <img src="${producto.imagen}" alt="" />
                     </figure>
                 </div>
+                -->
                 <div class="menu-item-body">
                     <h3>${producto.nombre}</h3>
                     <p>${producto.descripcion}</p>
