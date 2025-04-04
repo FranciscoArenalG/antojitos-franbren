@@ -69,6 +69,19 @@ $(function () {
         {nombre: "Arrachera",descripcion: "Acompañados con papas y/o nopales, tortilla de harina +$2.",precio: "$30",categoria: "tacos",imagen: "images/iconos/producto.svg",link: "https://wa.me/p/9111546255601379/5215643444614",},
         {nombre: "Chorizo argentino",descripcion: "Acompañados con papas y/o nopales, tortilla de harina +$2.",precio: "$30",categoria: "tacos",imagen: "images/iconos/producto.svg",link: "https://wa.me/p/9494797747229648/5215643444614",},
         {nombre: "Parrillada",descripcion: "1kg de arrachera, 1/2kg de chistorra, 2 piezas chorizo argentino, nopales, papas, habaneros, limones, tortillas y salsas.",precio: "$550",categoria: "tacos",imagen: "images/iconos/producto.svg",link: "javascript:;",},
+        /* Bebidas */
+        {nombre: "Coca cola",descripcion: "600 ml.",precio: "$550",categoria: "bebidas",imagen: "images/iconos/producto.svg",link: "javascript:;",},
+        {nombre: "Sidral mundet",descripcion: "600 ml.",precio: "$550",categoria: "bebidas",imagen: "images/iconos/producto.svg",link: "javascript:;",},
+        {nombre: "Sangría señorial",descripcion: "600 ml.",precio: "$550",categoria: "bebidas",imagen: "images/iconos/producto.svg",link: "javascript:;",},
+        {nombre: "Dalgona Coffee",descripcion: "Vaso de 16oz, acompañado de dos donas tradicionales.",precio: "$550",categoria: "bebidas",imagen: "images/iconos/producto.svg",link: "javascript:;",},
+        {nombre: "Café americano",descripcion: "Vaso de 16oz, acompañado de dos donas tradicionalesz.",precio: "$550",categoria: "bebidas",imagen: "images/iconos/producto.svg",link: "javascript:;",},
+        {nombre: "Capuchino",descripcion: "Vaso de 16oz, acompañado de dos donas tradicionales.",precio: "$550",categoria: "bebidas",imagen: "images/iconos/producto.svg",link: "javascript:;",},
+        {nombre: "Capuchino vainilla",descripcion: "Vaso de 16oz, acompañado de dos donas tradicionales.",precio: "$550",categoria: "bebidas",imagen: "images/iconos/producto.svg",link: "javascript:;",},
+        /* Sodas italianas */
+        {nombre: "Soda de Fresa",descripcion: "Refrescante soda italiana de fresa. Vaso de 16oz.",precio: "$550",categoria: "sodasitalianas",imagen: "images/iconos/producto.svg",link: "javascript:;",},
+        {nombre: "Soda de Rosas",descripcion: "Refrescante soda italiana de rosas. Vaso de 16oz.",precio: "$550",categoria: "sodasitalianas",imagen: "images/iconos/producto.svg",link: "javascript:;",},
+        {nombre: "Soda de Mora azul",descripcion: "Refrescante soda italiana de mora azul. Vaso de 16oz.",precio: "$550",categoria: "sodasitalianas",imagen: "images/iconos/producto.svg",link: "javascript:;",},
+        {nombre: "Soda de Mojito (sin alcohol)",descripcion: "Refrescante soda italiana de mojito (sin alcohol). Vaso de 16oz.",precio: "$550",categoria: "sodasitalianas",imagen: "images/iconos/producto.svg",link: "javascript:;",},
   ];
 
   productos.forEach((producto) => {
