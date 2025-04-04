@@ -383,10 +383,12 @@
 
 	/* Menu Dises (filtering) */
 	$(window).on("load", function () {
-		if ($(".menu-item-boxes").length) {
+		var $menuitemContainer = $(".menu-item-boxes");
 	
-			/* Init Isotope */
-			var $menuitem = $(".menu-item-boxes").isotope({
+		if ($menuitemContainer.length) {
+	
+			// Inicializar Isotope una vez que esté listo
+			var $menuitem = $menuitemContainer.isotope({
 				itemSelector: ".menu-item-box",
 				layoutMode: "masonry",
 				masonry: {
@@ -394,35 +396,39 @@
 				}
 			});
 	
-			/* Filter items on click + scroll */
+			// Enlaces del menú
 			var $menudisesnav = $(".menu-dises-nav li a");
 	
+			// Click en el menú
 			$menudisesnav.on("click", function (e) {
-				e.preventDefault();  // Evita la redirección automática del enlace
+				e.preventDefault();
 	
 				var $this = $(this);
 				var filterValue = $this.attr("data-filter");
 				var target = $this.attr("href");
 	
-				// Aplicar filtro
-				$menuitem.isotope({ filter: filterValue });
+				// Aplicar filtro si Isotope está listo
+				if ($menuitem) {
+					$menuitem.isotope({ filter: filterValue });
+				}
 	
-				// Activar clase
+				// Activar clase del botón
 				$menudisesnav.removeClass("active-menu-dises");
 				$this.addClass("active-menu-dises");
 	
-				// Scroll suave a la sección (solo cuando se hace clic)
+				// Scroll suave a la sección solo si existe
 				if (target && $(target).length) {
 					$("html, body").animate({
 						scrollTop: $(target).offset().top
-					}, 200);
+					}, 500);
 				}
 			});
 	
-			// Mostrar todos los elementos al cargar
+			// Filtro inicial
 			$menuitem.isotope({ filter: "*" });
 		}
 	});
+	
 	
 
 })(jQuery);
