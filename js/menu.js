@@ -69,6 +69,12 @@ $(function () {
         {nombre: "Arrachera",descripcion: "Acompañados con papas y/o nopales, tortilla de harina +$2.",precio: "$30",categoria: "tacos",imagen: "images/menu-1.jpg",link: "https://wa.me/p/9111546255601379/5215643444614",},
         {nombre: "Chorizo argentino",descripcion: "Acompañados con papas y/o nopales, tortilla de harina +$2.",precio: "$30",categoria: "tacos",imagen: "images/menu-1.jpg",link: "https://wa.me/p/9494797747229648/5215643444614",},
         {nombre: "Parrillada",descripcion: "1kg de arrachera, 1/2kg de chistorra, 2 piezas chorizo argentino, nopales, papas, habaneros, limones, tortillas y salsas.",precio: "$550",categoria: "tacos",imagen: "images/menu-1.jpg",link: "javascript:;",},
+        /* Bebidas */
+        {nombre: "Coca cola",descripcion: "600 ml.",precio: "$21",categoria: "bebidas",imagen: "images/menu-1.jpg",link: "javascript:;",},
+        {nombre: "Sidral mundet",descripcion: "600 ml.",precio: "$21",categoria: "bebidas",imagen: "images/menu-1.jpg",link: "javascript:;",},
+        {nombre: "Sangría señorial",descripcion: "600 ml.",precio: "$21",categoria: "bebidas",imagen: "images/menu-1.jpg",link: "javascript:;",},
+        {nombre: "Parrillada",descripcion: "1kg de arrachera, 1/2kg de chistorra, 2 piezas chorizo argentino, nopales, papas, habaneros, limones, tortillas y salsas.",precio: "$550",categoria: "tacos",imagen: "images/menu-1.jpg",link: "javascript:;",},
+        {nombre: "Parrillada",descripcion: "1kg de arrachera, 1/2kg de chistorra, 2 piezas chorizo argentino, nopales, papas, habaneros, limones, tortillas y salsas.",precio: "$550",categoria: "tacos",imagen: "images/menu-1.jpg",link: "javascript:;",},
   ];
 
   productos.forEach((producto) => {
