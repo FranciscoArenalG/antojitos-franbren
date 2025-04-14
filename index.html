@@ -192,7 +192,7 @@
                 </a>
                 <!-- Item End -->
                  <!-- Item start -->
-                <a href="https://wa.me/525643444614?text=Hola,%20vi%20esta%20promoción%20en%20su%20página%20web%20%20https://franciscoarenalg.github.io/antojitos-franbren/images/promocionales/Frappe-pinguinos-mini-hotcakes.jpg" class="carousel-item promos-fin-semana" data-bs-interval="10000">
+                <a href="https://wa.me/525643444614?text=Hola,%20vi%20esta%20promoción%20en%20su%20página%20web%20%20https://franciscoarenalg.github.io/antojitos-franbren/images/promocionales/Frappe-pinguinos-mini-hotcakes.jpg" class="carousel-item promos-fin-semana active" data-bs-interval="10000">
                   <img src="images/promocionales/Frappe-pinguinos-mini-hotcakes.jpg" class="d-block w-100" alt="...">
                   <div class="carousel-caption d-none d-md-block">
                   </div>
@@ -746,8 +746,10 @@
 
       if (esFinDeSemana) {
         $('#promos-fin-semana').removeClass('d-none');
+        $('#promos-fin-semana').addClass('active');
       } else {
         $('#promos-fin-semana').addClass('d-none');
+        $('#promos-fin-semana').removeClass('active');
       }
 
     </script>
